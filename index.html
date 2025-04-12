@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub para Todos - Montek.ai</title>
+  <style>
+    :root {
+      --color-background: #000000;
+      --color-text: #FFFFFF;
+      --color-accent: #ec4899;
+      --color-accent-hover: #db2777;
+      --color-soft: #EDF3FB;
+      --color-cardText: #000000;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: var(--color-background);
+      color: var(--color-text);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: white;
+      color: black;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section.card {
+      background-color: var(--color-soft);
+      color: var(--color-cardText);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: var(--color-accent);
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin: 40px auto 20px;
+      display: block;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: var(--color-accent-hover);
+    }
+
+    .footer-in-pdf {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #333;
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid #999;
+    }
+
+    footer.screen-only {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      border-top: 1px solid #444;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer.screen-only a {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+
+    @media print {
+      button,
+      footer.screen-only {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="contenido-infografia">
+    <header>
+      <h1>¿Cómo colaboran los desarrolladores *sin pisarse el código*? 🤯</h1>
+      <p>Spoiler: no es magia. Es <strong>GitHub</strong>. 🧠✨</p>
+    </header>
+
+    <section class="card">
+      <h2>🚀 Empieza con GitHub en 7 pasos</h2>
+      <ol>
+        <li><strong>Crea una cuenta en GitHub</strong> – es gratis y toma solo 2 minutos.</li>
+        <li><strong>Inicia un nuevo repositorio (repo)</strong> – aquí vivirá tu proyecto.</li>
+        <li><strong>Clónalo a tu computadora</strong> – usa Git para traer ese repo a tu máquina local.</li>
+        <li><strong>Haz cambios y haz commits frecuentemente</strong> – cada actualización se guarda como una “foto” del progreso.</li>
+        <li><strong>Haz push a GitHub</strong> – así tu equipo (o tu yo del futuro) siempre tiene la última versión.</li>
+        <li><strong>Usa ramas</strong> para experimentar sin romper el proyecto principal.</li>
+        <li><strong>Abre pull requests</strong> para proponer cambios y recibir feedback antes de unirlos.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>🌍 No solo para desarrolladores</h2>
+      <p>No necesitas ser programador para valorar el control de versiones. Escritores, diseñadores e incluso científicos de datos usan GitHub para:</p>
+      <ul>
+        <li>Rastrear versiones de su trabajo</li>
+        <li>Colaborar de forma transparente</li>
+        <li>Compartir y recibir retroalimentación fácilmente</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>🧠 Cómo lo usamos en Montek.ai</h2>
+      <p>En <strong>Montek.ai</strong>, tratamos a GitHub como nuestro pizarrón digital: colaborativo, transparente y siempre en evolución.</p>
+    </section>
+
+    <section class="card">
+      <h2>👩‍💻 Autora</h2>
+      <p><strong>Monica Flores Terroba</strong><br>
+      AI & Data Scientist | Founder en <a href="https://montek.ai" target="_blank">Montek.ai</a></p>
+      <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/monica-flores-terroba-86040111a/" target="_blank">linkedin.com/in/monica-flores-terroba</a></p>
+    </section>
+
+    <section class="card">
+      <h2>🛡️ Licencia</h2>
+      <p>© 2025 Montek Technologies LLC. Todos los derechos reservados.<br>
+      Este proyecto es solo para fines educativos y demostrativos.</p>
+    </section>
+
+    <section class="card">
+      <h2>❤️ ¿Te gustó?</h2>
+      <ul>
+        <li>⭐ Sígueme para más consejos como este</li>
+      </ul>
+    </section>
+
+    <div class="footer-in-pdf">
+      By Monica Flores Terroba © 2025 Montek Technologies LLC. All rights reserved.
+      <br>
+      <a href="https://montek.ai" target="_blank">montek.ai</a>
+    </div>
+  </div>
+
+  <button onclick="window.print()">Descargar como PDF</button>
+
+  <footer class="screen-only">
+    By Monica Flores Terroba © 2025 Montek Technologies LLC. All rights reserved. <br>
+    <a href="https://montek.ai" target="_blank">montek.ai</a>
+  </footer>
+
+</body>
+</html>
